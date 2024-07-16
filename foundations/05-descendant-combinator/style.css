@@ -1,0 +1,7 @@
+/* Descendent Combinator of div and nested p */
+div p {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}

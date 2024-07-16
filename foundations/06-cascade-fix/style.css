@@ -8,16 +8,19 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
+/* .para and .small-para have same specificity so place small after 
+  to take advantage of last defined rule */
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/* use ID for one layer higher specificity */
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,14 +32,15 @@ body {
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
-
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/* Shift under div.text bc has same specificity - last defined rule */
+div.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
