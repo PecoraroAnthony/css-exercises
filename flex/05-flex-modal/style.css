@@ -67,3 +67,31 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* Solution Section */
+/* Add padding and gap between flex items in modal */
+.modal {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+/* Don't let ! icon shrink and be smashed by flex layout */
+.icon {
+  flex-shrink: 0;
+}
+
+/* Modified HTML had header with button nested so flex them and space out */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* target text to have bottom margin */
+.text {
+  margin-bottom: 16px;
+}

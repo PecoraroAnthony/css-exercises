@@ -3,6 +3,14 @@
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  /* 
+  Make it a flex container with the box now a flex item
+  -use justify-content to center across the main axis (default row left to right)
+  -use align-items to center across the cross axis 
+   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
